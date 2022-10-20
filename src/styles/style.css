@@ -48,7 +48,7 @@ header {
   z-index: 1;
 }
 
-#content {
+main {
   flex: 1;
   background-color: rgb(42, 42, 42);
 }
