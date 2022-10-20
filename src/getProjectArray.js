@@ -16,6 +16,7 @@ const getProjectArray = () => {
       id: nameArray[i],
       imageSrc: imageArray[i],
       link: `https://aecel.github.io/${nameArray[i]}/`,
+      githubLink: `https://github.com/aecel/${nameArray[i]}`,
       alt: `Link to ${nameArray[i]}`,
     })
   }

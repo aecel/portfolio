@@ -75,11 +75,11 @@ footer {
 }
 
 .card {
-  border-radius: var(--radius);
+  border-radius: 10px;
   border: none;
   background-color: #1a1a1ae1;
-  height: 300px;
-  width: 600px;
+  height: 160px;
+  width: 340px;
   box-shadow: var(--shadow);
 }
 
