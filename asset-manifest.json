@@ -1,15 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f8139811.css",
-    "main.js": "/portfolio/static/js/main.d4a453a9.js",
+    "main.js": "/portfolio/static/js/main.203e33b2.js",
     "static/media/restaurant.png": "/portfolio/static/media/restaurant.6d3c2bfcd8f1b705280d.png",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.e31bc85523b515fe4928.png",
     "static/media/shopping-cart.png": "/portfolio/static/media/shopping-cart.5c99e6f73a8e918e4b99.png",
     "static/media/battleship.png": "/portfolio/static/media/battleship.fbb08bd6fbbcdd224953.png",
     "static/media/sign-up-form.png": "/portfolio/static/media/sign-up-form.87569833fb94054c04fa.png",
-    "static/media/odin-recipes.png": "/portfolio/static/media/odin-recipes.9d9ec5f9432884ddc3a1.png",
-    "static/media/rock-paper-scissors.png": "/portfolio/static/media/rock-paper-scissors.2d3bd155909686dacd4d.png",
-    "static/media/landing-page.png": "/portfolio/static/media/landing-page.08d9ca81fec9a6eea05c.png",
     "static/media/memory-game.png": "/portfolio/static/media/memory-game.06fceb309f9210085d70.png",
     "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.452c125094c1f100f121.png",
     "static/media/dashboard.png": "/portfolio/static/media/dashboard.f85ae64063b8e9c59c8b.png",
@@ -20,10 +17,10 @@
     "static/media/to-do.png": "/portfolio/static/media/to-do.66db3e4b915ca829c0ad.png",
     "index.html": "/portfolio/index.html",
     "main.f8139811.css.map": "/portfolio/static/css/main.f8139811.css.map",
-    "main.d4a453a9.js.map": "/portfolio/static/js/main.d4a453a9.js.map"
+    "main.203e33b2.js.map": "/portfolio/static/js/main.203e33b2.js.map"
   },
   "entrypoints": [
     "static/css/main.f8139811.css",
-    "static/js/main.d4a453a9.js"
+    "static/js/main.203e33b2.js"
   ]
 }
