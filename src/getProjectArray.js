@@ -2,12 +2,16 @@ const getProjectArray = () => {
   const importAll = (r) => {
     return r.keys().map(r)
   }
+
+  // Imports all images on the path
+  // "./images/projects"
   const imageArray = importAll(
     require.context("./images/projects", false, /\.(png|jpe?g|svg)$/)
   )
 
+  // Gets the name of each image
   const nameArray = imageArray.map((imageSrc) => {
-    return imageSrc.slice(14, imageSrc.indexOf("."))
+    return imageSrc.slice(24, imageSrc.indexOf("."))
   })
 
   let projectArray = []
