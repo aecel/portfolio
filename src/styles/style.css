@@ -9,7 +9,7 @@
   --dark-gray: #1e1e1e;
   --theme-color: rgb(34, 34, 34);
   --highlight-color: rgb(106, 46, 150);
-  --card-width: 800px;
+  --card-width: 1000px;
   --card-height: calc(var(--card-width) * 1080 / 1920);
   scrollbar-width: thin;
   color: white;
@@ -134,8 +134,109 @@ img {
   padding: 20px;
 }
 
+/* ProjectBrowser Component */
+
+.project-browser-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  flex-flow: wrap;
+  justify-content: center;
+  flex-flow: wrap;
+  box-sizing: border-box;
+}
+
+.project-navbar {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--dark-gray);
+  height: 60px;
+  width: var(--card-width);
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.project-navbar-tab {
+  height: 40px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.project-browser {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: var(--dark-gray);
+  height: var(--card-height);
+  width: var(--card-width);
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+}
+
+.project-browser-header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 20px;
+  gap: 20px;
+  background-color: rgb(16, 16, 16);
+  height: 50px;
+  width: var(--card-width);
+  box-shadow: var(--shadow);
+
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+}
+
+.project-browser-header-button {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.project-gif {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: #1a1a1ae1;
+  height: var(--card-height);
+  width: var(--card-width);
+  box-sizing: border-box;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--card-width);
+  height: 200px;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--shadow);
+  margin-top: 20px;
+}
+
 @media (max-width: 520px) {
   :root {
     --card-width: 500px;
+  }
+}
+
+@media (max-width: 300px) {
+  :root {
+    --card-width: 280px;
   }
 }
