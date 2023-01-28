@@ -1,6 +1,7 @@
 import "./styles/style.css"
 import getProjectArray from "./getProjectArray"
-import ProjectCard from "./components/ProjectCard"
+import Footer from "./components/Footer"
+import ProjectCards from "./components/ProjectCards"
 
 const App = () => {
   const projectArray = getProjectArray()
@@ -9,21 +10,9 @@ const App = () => {
     <div className="App">
       <header></header>
       <main>
-        <div class="cards-container">
-          {projectArray.map((project) => {
-            return (
-              <ProjectCard
-                id={project.id}
-                key={project.id}
-                imageSrc={project.imageSrc}
-                alt={project.alt}
-                link={project.link}
-              />
-            )
-          })}
-        </div>s
+        <ProjectCards />
       </main>
-      <footer>Copyright © aecel 2022</footer>
+      <Footer />
     </div>
   )
 }
