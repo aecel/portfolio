@@ -6,7 +6,7 @@ const getProjectArray = () => {
   // Imports all images on the path
   // "./images/projects"
   const imageArray = importAll(
-    require.context("./images/projects", false, /\.(png|jpe?g|svg)$/)
+    require.context("./images/projects", false, /\.(png|jpe?g|svg|gif)$/)
   )
 
   // Gets the name of each image

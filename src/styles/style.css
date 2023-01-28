@@ -6,9 +6,13 @@
 
   --light-color: rgba(255, 255, 255, 0.748);
   --main-color: rgb(6, 31, 70);
-  --dark-gray: rgb(34, 34, 34);
+  --dark-gray: #1e1e1e;
   --theme-color: rgb(34, 34, 34);
   --highlight-color: rgb(106, 46, 150);
+  --card-width: 800px;
+  --card-height: calc(var(--card-width) * 1080 / 1920);
+  scrollbar-width: thin;
+  color: white;
 }
 
 html,
@@ -36,7 +40,7 @@ header {
   padding: 15px;
   padding-left: 36px;
   padding-right: 36px;
-  background-color: #000000e1;
+  background-color: var(--dark-gray);
   font-weight: bold;
   font-size: 1.5rem;
 
@@ -49,7 +53,6 @@ header {
 }
 
 main {
-  flex: 1;
   background-color: rgb(42, 42, 42);
 }
 
@@ -57,7 +60,7 @@ main {
 footer {
   font-size: 10px;
   text-align: center;
-  background-color: #000000e1;
+  background-color: var(--dark-gray);
   color: white;
   padding-left: var(--gap);
   padding-right: var(--gap);
@@ -65,7 +68,7 @@ footer {
   padding-bottom: 12px;
 }
 
-.cards-container {
+.projects-container {
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -74,12 +77,42 @@ footer {
   justify-content: center;
 }
 
-.card {
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--card-width);
+  height: 50px;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+.project-image {
   border-radius: 10px;
   border: none;
   background-color: #1a1a1ae1;
-  height: 160px;
-  width: 340px;
+  height: var(--card-height);
+  width: var(--card-width);
+  box-shadow: var(--shadow);
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--card-width);
+  height: 200px;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  border: none;
   box-shadow: var(--shadow);
 }
 
@@ -88,5 +121,21 @@ img {
   width: inherit;
   border-radius: inherit;
   border: inherit;
-  object-fit: cover;  
+  object-fit: cover;
+}
+
+#Introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: var(--dark-gray);
+  padding: 20px;
+}
+
+@media (max-width: 520px) {
+  :root {
+    --card-width: 500px;
+  }
 }
