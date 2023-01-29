@@ -7,7 +7,7 @@ import ProjectBrowser from "./components/ProjectBrowser"
 const App = () => {
   return (
     <div className="App">
-      <header></header>
+      {/* <header></header> */}
       <main>
         {/* <Introduction /> */}
         <ProjectBrowser />

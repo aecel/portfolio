@@ -62,7 +62,7 @@ const ProjectBrowser = () => {
           <img src={chosenProject.imageSrc} alt={chosenProject.alt} />
         </a>
       </div>
-      {/* <div className="project-info"></div> */}
+      <div className="project-info"></div>
     </div>
   )
 }
