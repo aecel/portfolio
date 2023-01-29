@@ -16,21 +16,23 @@ const ProjectBrowser = () => {
     return null
   }
   const chooseTab = (event) => {
-    console.log(event.target.dataset.key)
     const index = getIndexById(event.target.dataset.key)
     setChosenProject(projectArray[index])
   }
   return (
     <div className="project-browser-container">
       <div className="project-browser-header">
-        <div className="project-browser-header-button"></div>
-        <div className="project-browser-header-button"></div>
-        <div className="project-browser-header-button"></div>
+        <div>{chosenProject.name + " - " + chosenProject.projectType}</div>
+        <div className="project-browser-header-buttons">
+          <div className="project-browser-header-button"></div>
+          <div className="project-browser-header-button"></div>
+          <div className="project-browser-header-button"></div>
+        </div>
       </div>
       <div
         className="project-navbar"
         style={{
-          gridTemplateColumns: `repeat(1fr, ${projectArray.length})`,
+          gridTemplateColumns: `repeat(${projectArray.length}, 1fr)`,
         }}
       >
         {projectArray.map((project) => {
@@ -55,12 +57,12 @@ const ProjectBrowser = () => {
           target="_blank"
           rel="noreferrer"
           className="project-gif"
-          href={chosenProject.githubLink}
+          href={chosenProject.link}
         >
           <img src={chosenProject.imageSrc} alt={chosenProject.alt} />
         </a>
       </div>
-      <div className="project-info"></div>
+      {/* <div className="project-info"></div> */}
     </div>
   )
 }

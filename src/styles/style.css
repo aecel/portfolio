@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 :root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --gap: 24px;
   --radius: 15px;
   --shadow: 5px 5px rgba(0, 0, 0, 0.27);
@@ -10,7 +12,7 @@
   --theme-color: rgb(34, 34, 34);
   --highlight-color: rgb(106, 46, 150);
   --card-width: 1000px;
-  --card-height: calc(var(--card-width) * 1080 / 1920);
+  --card-height: calc(var(--card-width) * 918 / 1900);
   scrollbar-width: thin;
   color: white;
 }
@@ -152,7 +154,7 @@ img {
   grid-auto-flow: column;
   align-items: center;
   gap: 10px;
-  background-color: #1C1B22;
+  background-color: #1c1b22;
   height: 60px;
   width: var(--card-width);
   box-shadow: var(--shadow);
@@ -163,12 +165,13 @@ img {
 .project-navbar-tab {
   height: 40px;
   background-color: #212028;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 10px;
   font-size: 0.8rem;
   cursor: pointer;
 }
@@ -194,10 +197,10 @@ img {
 .project-browser-header {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   padding: 20px;
   gap: 20px;
-  background-color: rgb(16, 16, 16);
+  background-color: #121116;
   height: 50px;
   width: var(--card-width);
   box-shadow: var(--shadow);
@@ -206,12 +209,20 @@ img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.project-browser-header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .project-browser-header-button {
   height: 15px;
   width: 15px;
-  background-color: #fff;
+  background-color: #1c1b22;
   border-radius: 50%;
 }
 
