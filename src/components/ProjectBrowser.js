@@ -1,23 +1,17 @@
 import { useState } from "react"
 import getOdinProjects from "../getOdinProjects"
-import habbitAppGif from "../images/projects/habit-app.gif"
 
 const ProjectBrowser = () => {
   const projectArray = getOdinProjects()
   const [chosenProject, setChosenProject] = useState(projectArray[0])
 
-  const getIndexById = (id) => {
-    for (const project of projectArray) {
-      if (project.id === id) {
-        return projectArray.indexOf(project)
-      }
-    }
-
-    return null
-  }
-  const chooseTab = (event) => {
-    const index = getIndexById(event.target.dataset.key)
+  const chooseTab = (index) => {
     setChosenProject(projectArray[index])
+  }
+
+  if (!chosenProject) {
+    console.log("Loading")
+    return <div>Loading</div>
   }
   return (
     <div className="project-browser-container">
@@ -35,18 +29,18 @@ const ProjectBrowser = () => {
           gridTemplateColumns: `repeat(${projectArray.length}, 1fr)`,
         }}
       >
-        {projectArray.map((project) => {
+        {projectArray.map((project, index) => {
           return (
             <div
-              data-key={project.id}
               key={project.id}
-              onClick={chooseTab}
+              onClick={() => chooseTab(index)}
               className={
                 project.id === chosenProject.id
                   ? "chosen-project project-navbar-tab"
                   : "project-navbar-tab"
               }
             >
+              <img src={project.favicon} className="project-favicon" alt="" />
               {project.name}
             </div>
           )
@@ -62,7 +56,7 @@ const ProjectBrowser = () => {
           <img src={chosenProject.imageSrc} alt={chosenProject.alt} />
         </a>
       </div>
-      <div className="project-info"></div>
+      {/* <div className="project-info"></div> */}
     </div>
   )
 }

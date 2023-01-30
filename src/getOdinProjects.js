@@ -5,6 +5,12 @@ import memoryGameGif from "./images/projects/memory-game.gif"
 import weatherAppGif from "./images/projects/weather-app.gif"
 import toDoGif from "./images/projects/to-do.gif"
 
+import shoppingCartFavicon from "./images/favicons/shopping-cart.ico"
+import habbitAppFavicon from "./images/favicons/habit-app.ico"
+import cvProjectFavicon from "./images/favicons/cv-project.ico"
+import memoryGameFavicon from "./images/favicons/memory-game.ico"
+import weatherAppFavicon from "./images/favicons/weather-app.ico"
+import toDoFavicon from "./images/favicons/to-do.ico"
 
 const getOdinProjects = () => {
   const odinProjectsArray = [
@@ -16,6 +22,7 @@ const getOdinProjects = () => {
       githubLink: `https://github.com/aecel/habit-app`,
       alt: "Link to Habit Forming App",
       projectType: "Personal Project",
+      favicon: habbitAppFavicon,
     },
     {
       id: "shopping-cart",
@@ -25,6 +32,7 @@ const getOdinProjects = () => {
       githubLink: `https://github.com/aecel/shopping-cart`,
       alt: "Link to Shopping Cart",
       projectType: "Odin Project",
+      favicon: shoppingCartFavicon,
     },
     {
       id: "cv-project",
@@ -34,6 +42,7 @@ const getOdinProjects = () => {
       githubLink: `https://github.com/aecel/cv-project`,
       alt: "Link to CV Generator",
       projectType: "Odin Project",
+      favicon: cvProjectFavicon,
     },
     {
       id: "memory-game",
@@ -43,6 +52,7 @@ const getOdinProjects = () => {
       githubLink: `https://github.com/aecel/memory-game`,
       alt: "Link to Memory Game",
       projectType: "Odin Project",
+      favicon: memoryGameFavicon,
     },
     {
       id: "weather-app",
@@ -52,6 +62,7 @@ const getOdinProjects = () => {
       githubLink: `https://github.com/aecel/weather-app`,
       alt: "Link to Weather App",
       projectType: "Odin Project",
+      favicon: weatherAppFavicon,
     },
     {
       id: "to-do",
@@ -61,8 +72,8 @@ const getOdinProjects = () => {
       githubLink: `https://github.com/aecel/to-do`,
       alt: "Link to To Do List",
       projectType: "Odin Project",
+      favicon: toDoFavicon,
     },
-
   ]
 
   return odinProjectsArray
