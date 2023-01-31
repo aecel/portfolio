@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8702d9bc.css",
-    "main.js": "/portfolio/static/js/main.9ca95881.js",
+    "main.css": "/portfolio/static/css/main.d0f02127.css",
+    "main.js": "/portfolio/static/js/main.03aee1a2.js",
     "static/media/shopping-cart.gif": "/portfolio/static/media/shopping-cart.dda542beb39cb95d9afb.gif",
     "static/media/weather-app.gif": "/portfolio/static/media/weather-app.8c15787a9db9137cdbaf.gif",
     "static/media/memory-game.gif": "/portfolio/static/media/memory-game.18210e22cd8609583182.gif",
@@ -20,11 +20,11 @@
     "static/media/shopping-cart.ico": "/portfolio/static/media/shopping-cart.a589c0bb0c922e3587fb.ico",
     "static/media/memory-game.ico": "/portfolio/static/media/memory-game.d5aeeecae021c0e22984.ico",
     "index.html": "/portfolio/index.html",
-    "main.8702d9bc.css.map": "/portfolio/static/css/main.8702d9bc.css.map",
-    "main.9ca95881.js.map": "/portfolio/static/js/main.9ca95881.js.map"
+    "main.d0f02127.css.map": "/portfolio/static/css/main.d0f02127.css.map",
+    "main.03aee1a2.js.map": "/portfolio/static/js/main.03aee1a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.8702d9bc.css",
-    "static/js/main.9ca95881.js"
+    "static/css/main.d0f02127.css",
+    "static/js/main.03aee1a2.js"
   ]
 }
