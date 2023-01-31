@@ -17,7 +17,7 @@ const ProjectBrowser = () => {
   return (
     <div className="project-browser-container">
       <div className="project-browser-header">
-        <div>{chosenProject.name + " - " + chosenProject.projectType}</div>
+        <div>{chosenProject.name}</div>
         <div className="project-browser-header-buttons">
           <div className="project-browser-header-button"></div>
           <div className="project-browser-header-button"></div>
@@ -57,7 +57,14 @@ const ProjectBrowser = () => {
           <img src={chosenProject.imageSrc} alt={chosenProject.alt} />
         </a>
       </div>
-      <ProjectInfo />
+      <ProjectInfo
+        name={chosenProject.name}
+        projectType={chosenProject.projectType}
+        link={chosenProject.link}
+        githubLink={chosenProject.githubLink}
+        description={chosenProject.description}
+        lessons={chosenProject.lessons}
+      />
     </div>
   )
 }

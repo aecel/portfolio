@@ -23,6 +23,8 @@ const getOdinProjects = () => {
       alt: "Link to Habit Forming App",
       projectType: "Personal Project",
       favicon: habbitAppFavicon,
+      description: "Description lorem ipsum",
+      lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
       id: "shopping-cart",
@@ -33,6 +35,8 @@ const getOdinProjects = () => {
       alt: "Link to Shopping Cart",
       projectType: "Odin Project",
       favicon: shoppingCartFavicon,
+      description: "Description lorem ipsum",
+      lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
       id: "cv-project",
@@ -43,6 +47,8 @@ const getOdinProjects = () => {
       alt: "Link to CV Generator",
       projectType: "Odin Project",
       favicon: cvProjectFavicon,
+      description: "Description lorem ipsum",
+      lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
       id: "memory-game",
@@ -53,6 +59,8 @@ const getOdinProjects = () => {
       alt: "Link to Memory Game",
       projectType: "Odin Project",
       favicon: memoryGameFavicon,
+      description: "Description lorem ipsum",
+      lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
       id: "weather-app",
@@ -63,6 +71,8 @@ const getOdinProjects = () => {
       alt: "Link to Weather App",
       projectType: "Odin Project",
       favicon: weatherAppFavicon,
+      description: "Description lorem ipsum",
+      lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
       id: "to-do",
@@ -73,6 +83,8 @@ const getOdinProjects = () => {
       alt: "Link to To Do List",
       projectType: "Odin Project",
       favicon: toDoFavicon,
+      description: "Description lorem ipsum",
+      lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
   ]
 

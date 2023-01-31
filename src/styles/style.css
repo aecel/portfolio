@@ -253,16 +253,51 @@ img {
 
 .project-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   width: var(--card-width);
-  height: 200px;
+  padding: 20px;
   background-color: var(--dark-gray);
   border-radius: 10px;
   border: none;
   box-shadow: var(--shadow);
   margin-top: 20px;
   box-sizing: border-box;
+}
+
+.project-info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-info-text {
+  font-size: 0.8rem;
+  color: rgb(216, 216, 216);
 }
 
 @media (max-width: 520px) {
