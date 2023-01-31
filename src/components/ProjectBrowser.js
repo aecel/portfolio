@@ -1,5 +1,6 @@
 import { useState } from "react"
 import getOdinProjects from "../getOdinProjects"
+import ProjectInfo from "./ProjectInfo"
 
 const ProjectBrowser = () => {
   const projectArray = getOdinProjects()
@@ -56,7 +57,7 @@ const ProjectBrowser = () => {
           <img src={chosenProject.imageSrc} alt={chosenProject.alt} />
         </a>
       </div>
-      {/* <div className="project-info"></div> */}
+      <ProjectInfo />
     </div>
   )
 }

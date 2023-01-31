@@ -235,7 +235,7 @@ img {
 .project-browser-header-button {
   height: 15px;
   width: 15px;
-  background-color: #1c1b22;
+  background-color: #42414d;
   border-radius: 50%;
 }
 
@@ -248,6 +248,8 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+/* Project Info Component */
 
 .project-info {
   display: flex;
