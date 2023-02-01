@@ -54,7 +54,11 @@ const ProjectBrowser = () => {
           className="project-gif"
           href={chosenProject.link}
         >
-          <img src={chosenProject.imageSrc} alt={chosenProject.alt} />
+          <img
+            className="project-gif-img"
+            src={chosenProject.imageSrc}
+            alt={chosenProject.alt}
+          />
         </a>
       </div>
       <ProjectInfo

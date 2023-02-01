@@ -23,7 +23,8 @@ const getOdinProjects = () => {
       alt: "Link to Habit Forming App",
       projectType: "Personal Project",
       favicon: habbitAppFavicon,
-      description: "Description lorem ipsum",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
@@ -35,7 +36,8 @@ const getOdinProjects = () => {
       alt: "Link to Shopping Cart",
       projectType: "Odin Project",
       favicon: shoppingCartFavicon,
-      description: "Description lorem ipsum",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
@@ -47,7 +49,8 @@ const getOdinProjects = () => {
       alt: "Link to CV Generator",
       projectType: "Odin Project",
       favicon: cvProjectFavicon,
-      description: "Description lorem ipsum",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
@@ -59,7 +62,8 @@ const getOdinProjects = () => {
       alt: "Link to Memory Game",
       projectType: "Odin Project",
       favicon: memoryGameFavicon,
-      description: "Description lorem ipsum",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
@@ -71,7 +75,8 @@ const getOdinProjects = () => {
       alt: "Link to Weather App",
       projectType: "Odin Project",
       favicon: weatherAppFavicon,
-      description: "Description lorem ipsum",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
     {
@@ -83,7 +88,8 @@ const getOdinProjects = () => {
       alt: "Link to To Do List",
       projectType: "Odin Project",
       favicon: toDoFavicon,
-      description: "Description lorem ipsum",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
     },
   ]
