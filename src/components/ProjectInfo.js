@@ -1,4 +1,4 @@
-import RoundedSquare from "./RoundedSquare"
+import WhatIUsed from "./WhatIUsed"
 
 const ProjectInfo = ({
   name,
@@ -7,6 +7,7 @@ const ProjectInfo = ({
   githubLink,
   description,
   lessons,
+  whatIUsed,
 }) => {
   return (
     <div className="project-info">
@@ -33,20 +34,15 @@ const ProjectInfo = ({
           </a>
         </div>
       </div>
-      {/* <div className="paragraph-space"></div>
-      
+      <div className="paragraph-space"></div>
+
       <div className="project-info-text-heading">Description</div>
       <div className="project-info-text">{description}</div>
       <div className="paragraph-space"></div>
 
       <div className="project-info-text-heading">What I used</div>
-      <div className="project-stack-container">
-        <RoundedSquare />
-        <RoundedSquare />
-        <RoundedSquare />
-        <RoundedSquare />
-      </div>
-      <div className="paragraph-space"></div>
+      <WhatIUsed array={whatIUsed} />
+      {/* <div className="paragraph-space"></div>
 
       <div className="project-info-text-heading">What I learned</div>
       {lessons.map((lesson, index) => {

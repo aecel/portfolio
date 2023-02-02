@@ -4,7 +4,7 @@
   font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --gap: 24px;
   --radius: 15px;
-  --shadow: 5px 5px rgba(0, 0, 0, 0.27);
+  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
 
   --light-color: rgba(255, 255, 255, 0.748);
   --main-color: rgb(6, 31, 70);
@@ -336,6 +336,7 @@ a {
   border-radius: 10px;
   border: none;
   box-sizing: border-box;
+  min-width: 105px;
 }
 
 .rounded-square-icon {
@@ -344,6 +345,7 @@ a {
 }
 
 .rounded-square-text {
+  font-weight: bold;
   font-size: 0.8rem;
 }
 

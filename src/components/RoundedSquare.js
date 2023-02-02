@@ -1,10 +1,8 @@
-import testIcon from "../images/testIcon.svg"
-
-const RoundedSquare = () => {
+const RoundedSquare = ({ icon, text }) => {
   return (
     <div className="rounded-square">
-      <img className="rounded-square-icon" src={testIcon} alt="" />
-      <div className="rounded-square-text">Sample Text</div>
+      <img className="rounded-square-icon" src={icon} alt="" />
+      <div className="rounded-square-text">{text}</div>
     </div>
   )
 }

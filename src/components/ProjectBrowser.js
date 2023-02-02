@@ -17,7 +17,7 @@ const ProjectBrowser = () => {
   return (
     <div className="project-browser-container">
       <div className="project-browser-header">
-        <div>{chosenProject.name}</div>
+        <div>FireChrome</div>
         <div className="project-browser-header-buttons">
           <div className="project-browser-header-button"></div>
           <div className="project-browser-header-button"></div>
@@ -68,6 +68,7 @@ const ProjectBrowser = () => {
         githubLink={chosenProject.githubLink}
         description={chosenProject.description}
         lessons={chosenProject.lessons}
+        whatIUsed={chosenProject.whatIUsed}
       />
     </div>
   )

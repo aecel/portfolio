@@ -26,6 +26,7 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
+      whatIUsed: ["React", "Javascript", "HTML", "CSS"],
     },
     {
       id: "shopping-cart",
@@ -39,6 +40,7 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
+      whatIUsed: ["React", "Javascript", "HTML", "CSS"],
     },
     {
       id: "cv-project",
@@ -52,6 +54,7 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
+      whatIUsed: ["React", "Javascript", "HTML", "CSS"],
     },
     {
       id: "memory-game",
@@ -65,6 +68,7 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
+      whatIUsed: ["React", "Javascript", "HTML", "CSS"],
     },
     {
       id: "weather-app",
@@ -78,6 +82,7 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
+      whatIUsed: ["Javascript", "HTML", "CSS"],
     },
     {
       id: "to-do",
@@ -91,6 +96,7 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
+      whatIUsed: ["Javascript", "HTML", "CSS"],
     },
   ]
 
