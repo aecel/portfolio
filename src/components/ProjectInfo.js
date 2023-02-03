@@ -36,9 +36,9 @@ const ProjectInfo = ({
       </div>
       <div className="paragraph-space"></div>
 
-      <div className="project-info-text-heading">Description</div>
+      {/* <div className="project-info-text-heading">Description</div>
       <div className="project-info-text">{description}</div>
-      <div className="paragraph-space"></div>
+      <div className="paragraph-space"></div> */}
 
       <div className="project-info-text-heading">What I used</div>
       <WhatIUsed array={whatIUsed} />

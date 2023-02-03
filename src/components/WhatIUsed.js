@@ -18,7 +18,7 @@ const WhatIUsed = ({ array }) => {
   return (
     <div className="project-stack-container">
       {array.map((name) => {
-        return <RoundedSquare icon={logoObj[name]} text={name} />
+        return <RoundedSquare key={name} icon={logoObj[name]} text={name} />
       })}
     </div>
   )

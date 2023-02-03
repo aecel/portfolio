@@ -1,6 +1,7 @@
 import { useState } from "react"
 import getOdinProjects from "../getOdinProjects"
 import ProjectInfo from "./ProjectInfo"
+import FireChromeSvg from "../images/logos/FireChromeBlue.svg"
 
 const ProjectBrowser = () => {
   const projectArray = getOdinProjects()
@@ -17,7 +18,10 @@ const ProjectBrowser = () => {
   return (
     <div className="project-browser-container">
       <div className="project-browser-header">
-        <div>FireChrome</div>
+        <div style={{ display: "flex" }}>
+          <img className="project-favicon" src={FireChromeSvg} alt="" />
+          <div>FireChrome</div>
+        </div>
         <div className="project-browser-header-buttons">
           <div className="project-browser-header-button"></div>
           <div className="project-browser-header-button"></div>
