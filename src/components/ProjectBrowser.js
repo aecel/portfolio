@@ -51,6 +51,7 @@ const ProjectBrowser = () => {
           )
         })}
       </div>
+      <div className="project-browser-top"></div>
       <div className="project-browser">
         <a
           target="_blank"

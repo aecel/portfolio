@@ -161,13 +161,15 @@ footer {
   width: var(--card-width);
   box-shadow: var(--shadow);
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .project-navbar-tab {
   height: 45px;
   background-color: #212028;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* border-radius: 5px; */
   border: none;
   box-sizing: border-box;
   display: flex;
@@ -191,6 +193,16 @@ footer {
   width: 20px;
   margin-right: 6px;
   box-sizing: border-box;
+}
+
+.project-browser-top {
+  background-color: #42414d;
+  height: 8px;
+  width: var(--card-width);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* border-radius: 5px; */
+  border: none;
 }
 
 .project-browser {
