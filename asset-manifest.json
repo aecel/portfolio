@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.805a7df0.css",
-    "main.js": "/portfolio/static/js/main.7eeca965.js",
+    "main.css": "/portfolio/static/css/main.1d6e9a46.css",
+    "main.js": "/portfolio/static/js/main.68877aa0.js",
     "static/media/shopping-cart.gif": "/portfolio/static/media/shopping-cart.dda542beb39cb95d9afb.gif",
     "static/media/weather-app.gif": "/portfolio/static/media/weather-app.8c15787a9db9137cdbaf.gif",
     "static/media/memory-game.gif": "/portfolio/static/media/memory-game.18210e22cd8609583182.gif",
@@ -23,13 +23,15 @@
     "static/media/memory-game.ico": "/portfolio/static/media/memory-game.d5aeeecae021c0e22984.ico",
     "static/media/HTML.svg": "/portfolio/static/media/HTML.d16c98e8364b39730843fcb410e3d0e4.svg",
     "static/media/Javascript.svg": "/portfolio/static/media/Javascript.61c1fa6b2ee4eb8ce8d0e0c25ab67854.svg",
+    "static/media/Webpack.svg": "/portfolio/static/media/Webpack.23fc1d3ac606d117e05a140e0de79806.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/npm.svg": "/portfolio/static/media/npm.5cd609b9924773597efb0c279a05e40b.svg",
     "static/media/React.svg": "/portfolio/static/media/React.fff4fd514ba20a042d2cd63734178e6a.svg",
-    "main.805a7df0.css.map": "/portfolio/static/css/main.805a7df0.css.map",
-    "main.7eeca965.js.map": "/portfolio/static/js/main.7eeca965.js.map"
+    "main.1d6e9a46.css.map": "/portfolio/static/css/main.1d6e9a46.css.map",
+    "main.68877aa0.js.map": "/portfolio/static/js/main.68877aa0.js.map"
   },
   "entrypoints": [
-    "static/css/main.805a7df0.css",
-    "static/js/main.7eeca965.js"
+    "static/css/main.1d6e9a46.css",
+    "static/js/main.68877aa0.js"
   ]
 }
