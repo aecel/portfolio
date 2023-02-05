@@ -18,12 +18,17 @@ const ProjectBrowser = () => {
   return (
     <div className="project-browser-container">
       <div className="project-browser-header">
-        <div style={{ display: "flex" }}>
+        {/* <div style={{ display: "flex" }}>
           <img className="project-favicon" src={FireChromeSvg} alt="" />
           <div>FireChrome</div>
-        </div>
+        </div> */}
         <div className="project-browser-header-buttons">
-          <div className="project-browser-header-button"></div>
+          <div
+            className="project-browser-header-button"
+            style={{
+              backgroundColor: "#FE5E56",
+            }}
+          ></div>
           <div className="project-browser-header-button"></div>
           <div className="project-browser-header-button"></div>
         </div>

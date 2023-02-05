@@ -197,12 +197,13 @@ footer {
 
 .project-browser-top {
   background-color: #42414d;
-  height: 8px;
+  height: 3px;
   width: var(--card-width);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
   /* border-radius: 5px; */
   border: none;
+  box-shadow: var(--shadow);
 }
 
 .project-browser {
@@ -352,8 +353,8 @@ a {
 }
 
 .rounded-square-icon {
-  height: 30px;
-  width: auto;
+  width: 30px;
+  height: auto;
 }
 
 .rounded-square-text {
