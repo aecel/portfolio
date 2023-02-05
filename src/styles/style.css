@@ -267,7 +267,7 @@ footer {
 .project-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   width: var(--card-width);
   padding: 20px;
   background-color: #1c1b22;
@@ -326,6 +326,7 @@ a {
 }
 
 .project-stack-container {
+  margin-top: 20px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -343,7 +344,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 13px;
+  height: 100px;
+  width: 140px;
   padding: 20px;
   background-color: #212028;
   border-radius: 10px;
@@ -352,14 +355,23 @@ a {
   min-width: 105px;
 }
 
+.rounded-square-icon-container {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .rounded-square-icon {
-  width: 30px;
-  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .rounded-square-text {
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 @media (max-width: 520px) {

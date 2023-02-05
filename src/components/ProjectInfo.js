@@ -34,17 +34,13 @@ const ProjectInfo = ({
           </a>
         </div>
       </div>
-      <div className="paragraph-space"></div>
 
       {/* <div className="project-info-text-heading">Description</div>
-      <div className="project-info-text">{description}</div>
-      <div className="paragraph-space"></div> */}
+      <div className="project-info-text">{description}</div> */}
 
-      <div className="project-info-text-heading">What I used</div>
       <WhatIUsed array={whatIUsed} />
-      {/* <div className="paragraph-space"></div>
 
-      <div className="project-info-text-heading">What I learned</div>
+      {/* <div className="project-info-text-heading">What I learned</div>
       {lessons.map((lesson, index) => {
         return (
           <div key={index} className="project-info-text">
