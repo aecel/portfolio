@@ -1,3 +1,6 @@
+import Libraries from "./Libraries"
+import ProjectDescription from "./ProjectDescription"
+import WhatILearned from "./WhatILearned"
 import WhatIUsed from "./WhatIUsed"
 
 const ProjectInfo = ({
@@ -8,6 +11,7 @@ const ProjectInfo = ({
   description,
   lessons,
   whatIUsed,
+  npmLibraries,
 }) => {
   return (
     <div className="project-info">
@@ -35,19 +39,10 @@ const ProjectInfo = ({
         </div>
       </div>
 
-      {/* <div className="project-info-text-heading">Description</div>
-      <div className="project-info-text">{description}</div> */}
-
+      {/* <ProjectDescription description={description} /> */}
       <WhatIUsed array={whatIUsed} />
-
-      {/* <div className="project-info-text-heading">What I learned</div>
-      {lessons.map((lesson, index) => {
-        return (
-          <div key={index} className="project-info-text">
-            {index + 1}. {lesson}
-          </div>
-        )
-      })} */}
+      <Libraries libraries={npmLibraries} />
+      {/* <WhatILearned lessons={lessons} /> */}
     </div>
   )
 }

@@ -79,6 +79,7 @@ const ProjectBrowser = () => {
         description={chosenProject.description}
         lessons={chosenProject.lessons}
         whatIUsed={chosenProject.whatIUsed}
+        npmLibraries={chosenProject.npmLibraries}
       />
     </div>
   )

@@ -27,7 +27,14 @@ const getOdinProjects = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
-      npmLibraries: ["chart-js", "ReactTooltip", "party-js"],
+      npmLibraries: [
+        "React Router",
+        "Chart.js",
+        "React Tooltip",
+        "party.js",
+        "calendar-object",
+        "shade-generator",
+      ],
     },
     {
       id: "shopping-cart",
@@ -41,7 +48,8 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
-      whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack"],
+      whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
+      npmLibraries: ["React Router"],
     },
     {
       id: "cv-project",
@@ -56,6 +64,7 @@ const getOdinProjects = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
+      npmLibraries: ["jsPDF"],
     },
     {
       id: "memory-game",
@@ -69,7 +78,8 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
-      whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack"],
+      whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
+      npmLibraries: ["party.js"],
     },
     {
       id: "weather-app",
@@ -92,7 +102,9 @@ const getOdinProjects = () => {
         "OpenWeather API",
         "Leaflet API",
       ],
+      npmLibraries: ["round-flag-icons", "unix-timestamp"],
     },
+
     {
       id: "to-do",
       name: "To Do List",
@@ -105,7 +117,8 @@ const getOdinProjects = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       lessons: ["what I learned lorem ipsum", "dolor sit amet", "third lesson"],
-      whatIUsed: ["Javascript", "HTML", "CSS", "Webpack"],
+      whatIUsed: ["Javascript", "HTML", "CSS", "Webpack", "npm"],
+      npmLibraries: ["date-fns"],
     },
   ]
 

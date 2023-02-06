@@ -323,10 +323,11 @@ a {
   color: rgb(216, 216, 216);
   padding-bottom: 10px;
   border-bottom: 2px rgb(98, 98, 98) dashed;
+  margin-bottom: 20px;
 }
 
 .project-stack-container {
-  margin-top: 20px;
+  
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -372,6 +373,14 @@ a {
   font-weight: bold;
   font-size: 0.7rem;
   text-align: center;
+}
+
+/* WhatILearned component */
+
+.project-info-lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (max-width: 520px) {
