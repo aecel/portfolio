@@ -57,7 +57,7 @@ const ProjectBrowser = () => {
         })}
       </div>
       <div className="project-browser-top"></div>
-      <div className="project-browser">
+      {/* <div className="project-browser"> */}
         <a
           target="_blank"
           rel="noreferrer"
@@ -70,7 +70,7 @@ const ProjectBrowser = () => {
             alt={chosenProject.alt}
           />
         </a>
-      </div>
+      {/* </div> */}
       <ProjectInfo
         name={chosenProject.name}
         projectType={chosenProject.projectType}

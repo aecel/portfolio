@@ -11,7 +11,8 @@
   --dark-gray: #1e1e1e;
   --theme-color: rgb(34, 34, 34);
   --highlight-color: rgb(106, 46, 150);
-  --screen-margin: 200px;
+  --card-width: 1500px;
+  --card-height: calc(var(--card-width) * 918 / 1900);
   scrollbar-width: thin;
   color: white;
   font-size: 0.9rem;
@@ -90,7 +91,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: var(--card-width);
   height: 50px;
   background-color: var(--dark-gray);
   border-radius: 10px;
@@ -98,11 +99,20 @@ footer {
   box-shadow: var(--shadow);
 }
 
+.project-image {
+  border-radius: 10px;
+  border: none;
+  background-color: #1a1a1ae1;
+  height: var(--card-height);
+  width: var(--card-width);
+  box-shadow: var(--shadow);
+}
+
 .project-description {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: var(--card-width);
   height: 200px;
   background-color: var(--dark-gray);
   border-radius: 10px;
@@ -111,13 +121,12 @@ footer {
 }
 
 .project-gif-img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: inherit;
   border: inherit;
   object-fit: contain;
   box-sizing: border-box;
-  box-shadow: var(--shadow);
 }
 
 #Introduction {
@@ -133,8 +142,7 @@ footer {
 /* ProjectBrowser Component */
 
 .project-browser-container {
-  margin-left: var(--screen-margin);
-  margin-right: var(--screen-margin);
+  margin: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -151,7 +159,7 @@ footer {
   gap: 10px;
   background-color: #1c1b22;
   /* height: 60px; */
-  width: 100%;
+  width: var(--card-width);
   box-shadow: var(--shadow);
   box-sizing: border-box;
   padding: 10px 10px 0 10px;
@@ -182,8 +190,8 @@ footer {
 }
 
 .project-favicon {
-  max-height: 20px;
-  max-width: 20px;
+  height: 20px;
+  width: 20px;
   margin-right: 6px;
   box-sizing: border-box;
 }
@@ -191,8 +199,7 @@ footer {
 .project-browser-top {
   background-color: #42414d;
   height: 3px;
-  width: 100%;
-  /* width: var(--card-width); */
+  width: var(--card-width);
   /* border-top-left-radius: 10px;
   border-top-right-radius: 10px; */
   /* border-radius: 5px; */
@@ -221,14 +228,15 @@ footer {
   padding: 20px;
   gap: 20px;
   background-color: #121116;
-  /* height: 50px; */
-  width: 100%;
+  height: 50px;
+  width: var(--card-width);
   box-shadow: var(--shadow);
 
   border: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-sizing: border-box;
+  font-size: 0.9rem;
 }
 
 .project-browser-header-buttons {
@@ -251,8 +259,8 @@ footer {
   border: none;
   box-sizing: inherit;
   object-fit: contain;
-  width: 100%;
-  /* max-height: 100%; */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Project Info Component */
@@ -261,7 +269,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 100%;
+  width: var(--card-width);
   padding: 20px;
   background-color: #1c1b22;
   border-radius: 10px;
@@ -278,6 +286,7 @@ footer {
   max-width: 100%;
   padding-bottom: 20px;
   border-bottom: 2px rgb(98, 98, 98) solid;
+  font-size: 0.9rem;
   /* border-style: ; */
 }
 
@@ -296,6 +305,7 @@ footer {
   padding: 10px;
   border-radius: 10px;
   border: none;
+  font-size: 0.8rem;
 }
 
 a {
@@ -304,10 +314,12 @@ a {
 }
 
 .project-info-text {
+  font-size: 0.8rem;
   color: rgb(216, 216, 216);
 }
 
 .project-info-text-heading {
+  font-size: 0.8rem;
   font-weight: bold;
   color: rgb(216, 216, 216);
   padding-bottom: 10px;
@@ -359,6 +371,7 @@ a {
 
 .rounded-square-text {
   font-weight: bold;
+  font-size: 0.7rem;
   text-align: center;
 }
 
@@ -370,67 +383,74 @@ a {
   gap: 20px;
 }
 
-@media (max-width: 1500px) {
-  :root {
-    --screen-margin: 100px;
-    font-size: 0.7rem;
-  }
-}
-
 @media (max-width: 1200px) {
   :root {
-    --screen-margin: 50px;
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 700px) {
-  :root {
-    --screen-margin: 30px;
-    font-size: 0.6rem;
+    --card-width: 1000px;
+    /* font-size: 0.7rem; */
   }
 
-  .project-favicon {
-    height: 8px;
-    width: 8px;
-    margin-right: 3px;
-  }
-
-  .project-navbar {
+  /* .project-navbar {
     padding: 5px;
-    padding-bottom: 0px;
     gap: 5px;
   }
 
   .project-navbar-tab {
     height: 30px;
-    padding: 2px;
+    font-size: 0.5rem;
+    padding: 5px;
   }
 
-  .project-browser-header {
-    gap: 10px;
-  }
-
-  .project-browser-header-button {
-    height: 9px;
-    width: 9px;
-  }
+  .project-favicon {
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+  } */
 }
 
 @media (max-width: 520px) {
   :root {
-    --screen-margin: 20px;
+    --card-width: 500px;
+    font-size: 0.7rem;
+  }
+
+  .project-navbar {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .project-navbar-tab {
+    height: 30px;
     font-size: 0.5rem;
+    padding: 5px;
   }
 
   .project-favicon {
-    display: none;
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
   }
 }
 
 @media (max-width: 350px) {
   :root {
-    --screen-margin: 10px;
+    --card-width: 350px;
+    font-size: 0.7rem;
+  }
+
+  .project-navbar {
+    padding: 2px;
+    gap: 5px;
+  }
+
+  .project-navbar-tab {
+    height: 20px;
     font-size: 0.4rem;
+    padding: 2px;
+  }
+
+  .project-favicon {
+    height: 10px;
+    width: 10px;
+    margin-right: 2px;
   }
 }
