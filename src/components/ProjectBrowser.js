@@ -1,19 +1,19 @@
-import { useState } from "react"
-import getOdinProjects from "../getOdinProjects"
-import ProjectInfo from "./ProjectInfo"
-import FireChromeSvg from "../images/logos/FireChromeBlue.svg"
+import { useState } from "react";
+import getProjectsArray from "../getProjectsArray";
+import ProjectInfo from "./ProjectInfo";
+import FireChromeSvg from "../images/logos/FireChromeBlue.svg";
 
 const ProjectBrowser = () => {
-  const projectArray = getOdinProjects()
-  const [chosenProject, setChosenProject] = useState(projectArray[0])
+  const projectArray = getProjectsArray();
+  const [chosenProject, setChosenProject] = useState(projectArray[0]);
 
   const chooseTab = (index) => {
-    setChosenProject(projectArray[index])
-  }
+    setChosenProject(projectArray[index]);
+  };
 
   if (!chosenProject) {
-    console.log("Loading")
-    return <div>Loading</div>
+    console.log("Loading");
+    return <div>Loading</div>;
   }
   return (
     <div className="project-browser-container">
@@ -53,24 +53,22 @@ const ProjectBrowser = () => {
               <img src={project.favicon} className="project-favicon" alt="" />
               {project.name}
             </div>
-          )
+          );
         })}
       </div>
       <div className="project-browser-top"></div>
-      {/* <div className="project-browser"> */}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          className="project-gif"
-          href={chosenProject.link}
-        >
-          <img
-            className="project-gif-img"
-            src={chosenProject.imageSrc}
-            alt={chosenProject.alt}
-          />
-        </a>
-      {/* </div> */}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        className="project-gif"
+        href={chosenProject.link}
+      >
+        <img
+          className="project-gif-img"
+          src={chosenProject.imageSrc}
+          alt={chosenProject.alt}
+        />
+      </a>
       <ProjectInfo
         name={chosenProject.name}
         projectType={chosenProject.projectType}
@@ -82,7 +80,7 @@ const ProjectBrowser = () => {
         npmLibraries={chosenProject.npmLibraries}
       />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectBrowser
+export default ProjectBrowser;

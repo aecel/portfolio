@@ -2,15 +2,11 @@
 
 :root {
   font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --gap: 24px;
-  --radius: 15px;
-  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
 
-  --light-color: rgba(255, 255, 255, 0.748);
-  --main-color: rgb(6, 31, 70);
+  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
   --dark-gray: #1e1e1e;
   --theme-color: rgb(34, 34, 34);
-  --highlight-color: rgb(106, 46, 150);
+  --max-width: 1500px;
   --screen-margin: 200px;
   scrollbar-width: thin;
   color: white;
@@ -29,16 +25,6 @@ body {
   background-color: #2a2a2a;
 }
 
-/* Usual background, change the URL */
-/* html {
-  background: url(./images/bread-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
-/* Usual header */
 header {
   padding: 15px;
   padding-left: 36px;
@@ -57,9 +43,11 @@ header {
 
 main {
   background-color: rgb(42, 42, 42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Usual footer */
 footer {
   font-size: 0.8rem;
   text-align: center;
@@ -121,10 +109,13 @@ footer {
 }
 
 #Introduction {
+  margin-left: var(--screen-margin);
+  margin-right: var(--screen-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 500px;
   background-color: var(--dark-gray);
   padding: 20px;
@@ -142,6 +133,7 @@ footer {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  max-width: var(--max-width);
 }
 
 .project-navbar {
@@ -192,26 +184,8 @@ footer {
   background-color: #42414d;
   height: 3px;
   width: 100%;
-  /* width: var(--card-width); */
-  /* border-top-left-radius: 10px;
-  border-top-right-radius: 10px; */
-  /* border-radius: 5px; */
   border: none;
   box-shadow: var(--shadow);
-}
-
-.project-browser {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border: none;
-  /* background-color: var(--dark-gray); */
-  width: var(--card-width);
-  /* height: var(--card-height); */
-  box-shadow: var(--shadow);
-  box-sizing: border-box;
 }
 
 .project-browser-header {
@@ -221,7 +195,6 @@ footer {
   padding: 20px;
   gap: 20px;
   background-color: #121116;
-  /* height: 50px; */
   width: 100%;
   box-shadow: var(--shadow);
 
@@ -252,7 +225,6 @@ footer {
   box-sizing: inherit;
   object-fit: contain;
   width: 100%;
-  /* max-height: 100%; */
 }
 
 /* Project Info Component */

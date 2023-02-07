@@ -1,6 +1,6 @@
 const Introduction = () => {
   return <div id="Introduction">
-    <div></div>
+    <div>Hello, I'm Aecel</div>
   </div>
 }
 
