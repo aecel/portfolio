@@ -1,7 +1,8 @@
-import Libraries from "./Libraries"
-import ProjectDescription from "./ProjectDescription"
-import WhatILearned from "./WhatILearned"
-import WhatIUsed from "./WhatIUsed"
+import Libraries from "./Libraries";
+import ProjectDescription from "./ProjectDescription";
+import WhatILearned from "./WhatILearned";
+import WhatIUsed from "./WhatIUsed";
+import linkIconPng from "../images/linkIcon.png";
 
 const ProjectInfo = ({
   name,
@@ -26,6 +27,7 @@ const ProjectInfo = ({
             rel="noreferrer"
             href={githubLink}
           >
+            <img src={linkIconPng} className="project-favicon" alt="" />
             Github Link
           </a>
           <a
@@ -34,6 +36,7 @@ const ProjectInfo = ({
             rel="noreferrer"
             href={link}
           >
+            <img src={linkIconPng} className="project-favicon" alt="" />
             Website Link
           </a>
         </div>
@@ -44,7 +47,7 @@ const ProjectInfo = ({
       <Libraries libraries={npmLibraries} />
       <WhatILearned lessons={lessons} />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectInfo
+export default ProjectInfo;

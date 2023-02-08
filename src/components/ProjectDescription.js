@@ -1,10 +1,19 @@
 const ProjectDescription = ({ description }) => {
   return (
     <>
-      {description ? (
+      {description.length > 0 ? (
         <div>
           <div className="project-info-text-heading">Description</div>
-          <div className="project-info-text">{description}</div>
+          {description.map((paragraph, index) => {
+            return (
+              <div
+                className="project-info-text project-description-text"
+                key={index}
+              >
+                {paragraph}
+              </div>
+            );
+          })}
         </div>
       ) : (
         <></>

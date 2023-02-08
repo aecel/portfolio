@@ -13,7 +13,7 @@ import weatherAppFavicon from "./images/favicons/weather-app.ico";
 import toDoFavicon from "./images/favicons/to-do.ico";
 
 const getProjectsArray = () => {
-  const odinProjectsArray = [
+  const projectsArray = [
     {
       id: "habit-app",
       name: "Habit Forming App",
@@ -23,8 +23,7 @@ const getProjectsArray = () => {
       alt: "Link to Habit Forming App",
       projectType: "Personal Project",
       favicon: habbitAppFavicon,
-      description:
-        "",
+      description: [],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: [
@@ -45,8 +44,7 @@ const getProjectsArray = () => {
       alt: "Link to Shopping Cart",
       projectType: "Odin Project",
       favicon: shoppingCartFavicon,
-      description:
-        "",
+      description: [],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["React Router"],
@@ -60,8 +58,7 @@ const getProjectsArray = () => {
       alt: "Link to CV Generator",
       projectType: "Odin Project",
       favicon: cvProjectFavicon,
-      description:
-        "",
+      description: [],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["jsPDF"],
@@ -75,8 +72,7 @@ const getProjectsArray = () => {
       alt: "Link to Memory Game",
       projectType: "Odin Project",
       favicon: memoryGameFavicon,
-      description:
-        "",
+      description: [],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["party.js"],
@@ -90,8 +86,7 @@ const getProjectsArray = () => {
       alt: "Link to Weather App",
       projectType: "Odin Project",
       favicon: weatherAppFavicon,
-      description:
-        "",
+      description: [],
       lessons: [],
       whatIUsed: [
         "Javascript",
@@ -114,15 +109,14 @@ const getProjectsArray = () => {
       alt: "Link to To Do List",
       projectType: "Odin Project",
       favicon: toDoFavicon,
-      description:
-        "",
+      description: [],
       lessons: [],
       whatIUsed: ["Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["date-fns"],
     },
   ];
 
-  return odinProjectsArray;
+  return projectsArray;
 };
 
 export default getProjectsArray;

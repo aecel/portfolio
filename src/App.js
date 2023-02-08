@@ -5,7 +5,7 @@ import ProjectBrowser from "./components/ProjectBrowser"
 
 const App = () => {
   return (
-    <div className="App">
+    <div id="App">
       {/* <header></header> */}
       <main>
         <Introduction />

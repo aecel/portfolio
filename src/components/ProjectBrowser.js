@@ -17,6 +17,22 @@ const ProjectBrowser = () => {
   }
   return (
     <div className="project-browser-container">
+      <div className="project-browser-instructions">
+        <div className="project-browser-instruction">
+          Down below is my interactive project browser. It displays some of the
+          projects I've worked on so far.
+        </div>
+        <div className="project-browser-instruction">
+          Click on a tab to preview a project.
+        </div>
+        <div className="project-browser-instruction">
+          Click on the preview image to open a live demo in a new tab.
+        </div>
+        <div className="project-browser-instruction">
+          Scroll down below to see more information about the highlighted
+          project.
+        </div>
+      </div>
       <div className="project-browser-header">
         {/* <div style={{ display: "flex" }}>
           <img className="project-favicon" src={FireChromeSvg} alt="" />
