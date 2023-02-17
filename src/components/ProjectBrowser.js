@@ -19,8 +19,8 @@ const ProjectBrowser = () => {
     <div className="project-browser-container">
       <div className="project-browser-instructions">
         <div className="project-browser-instruction">
-          Down below is my interactive project browser. It displays some of the
-          projects I've worked on so far.
+          This is my interactive project browser. It displays some of the
+          projects I've worked on in the past.
         </div>
         <div className="project-browser-instruction">
           Click on a tab to preview a project.
@@ -29,7 +29,7 @@ const ProjectBrowser = () => {
           Click on the preview image to open a live demo in a new tab.
         </div>
         <div className="project-browser-instruction">
-          Scroll down below to see more information about the highlighted
+          Scroll below the browser to see more information about the highlighted
           project.
         </div>
       </div>

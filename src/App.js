@@ -2,6 +2,7 @@ import "./styles/style.css"
 import Footer from "./components/Footer"
 import Introduction from "./components/Introduction"
 import ProjectBrowser from "./components/ProjectBrowser"
+import ContactMe from "./components/ContactMe"
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <main>
         <Introduction />
         <ProjectBrowser />
+        <ContactMe />
       </main>
       <Footer />
     </div>
