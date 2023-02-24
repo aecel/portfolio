@@ -5,12 +5,14 @@
 
   --shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
   --dark-gray: #1e1e1e;
+  --darker-gray: #141414;
   --theme-color: rgb(34, 34, 34);
   --max-width: 1400px;
   --screen-margin: 200px;
   scrollbar-width: thin;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
 }
 
 html,
@@ -25,89 +27,37 @@ body,
   flex-direction: column;
   background-color: #2a2a2a;
 }
-
-header {
-  padding: 15px;
-  padding-left: 36px;
-  padding-right: 36px;
-  background-color: var(--dark-gray);
-  font-weight: bold;
-  font-size: 1.5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  /* box-shadow: var(--shadow); */
-  z-index: 1;
-}
-
 main {
   background-color: rgb(42, 42, 42);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
+header,
 footer {
-  font-size: 0.8rem;
+  height: 30px;
   width: 100%;
-  text-align: center;
-  background-color: var(--dark-gray);
-  color: white;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  gap: 50px;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.project-title {
+  padding: 20px var(--screen-margin) 20px var(--screen-margin);
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
-  height: 50px;
-  background-color: var(--dark-gray);
-  border-radius: 10px;
-  border: none;
-  box-shadow: var(--shadow);
-}
-
-.project-description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  height: 200px;
-  background-color: var(--dark-gray);
-  border-radius: 10px;
-  border: none;
-  box-shadow: var(--shadow);
-}
-
-.project-gif-img {
-  width: 100%;
-  height: auto;
-  border-radius: inherit;
-  border: inherit;
-  object-fit: contain;
   box-sizing: border-box;
-  box-shadow: var(--shadow);
+  background-color: var(--darker-gray);
 }
+
+.main-with-max-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-width);
+  gap: 30px;
+  text-align: center;
+}
+
+/* Introduction Component */
 
 #Introduction {
   margin-left: var(--screen-margin);
@@ -119,9 +69,31 @@ footer {
   gap: 20px;
   width: 100%;
   height: 500px;
+  background-color: var(--darker-gray);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Github component */
+
+#Github {
+  margin-left: var(--screen-margin);
+  margin-right: var(--screen-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 400px;
   background-color: var(--dark-gray);
   padding: 20px;
   box-sizing: border-box;
+}
+
+.github-calendar {
+  max-width: var(--max-width);
+  height: auto;
 }
 
 /* ProjectBrowser Component */
@@ -137,6 +109,16 @@ footer {
   align-items: center;
   box-sizing: border-box;
   max-width: var(--max-width);
+}
+
+.project-gif-img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  border: inherit;
+  object-fit: contain;
+  box-sizing: border-box;
+  box-shadow: var(--shadow);
 }
 
 .project-browser-instructions {
@@ -364,6 +346,16 @@ a {
 
 /* ContactMe component */
 
+#ContactMe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-gray);
+  padding: 50px var(--screen-margin) 50px var(--screen-margin);
+  box-sizing: border-box;
+}
+
 #HireMeButton {
   text-decoration: none;
   color: white;
@@ -429,6 +421,10 @@ a {
   .project-browser-header-button {
     height: 9px;
     width: 9px;
+  }
+
+  .github-calendar {
+    width: 300px;
   }
 }
 
