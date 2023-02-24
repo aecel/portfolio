@@ -6,11 +6,11 @@
   --shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
   --dark-gray: #1e1e1e;
   --theme-color: rgb(34, 34, 34);
-  --max-width: 1500px;
+  --max-width: 1400px;
   --screen-margin: 200px;
   scrollbar-width: thin;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 html,
@@ -121,11 +121,12 @@ footer {
   height: 500px;
   background-color: var(--dark-gray);
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /* ProjectBrowser Component */
 
-.project-browser-container {
+#ProjectBrowser {
   margin-left: var(--screen-margin);
   margin-right: var(--screen-margin);
   padding-top: 50px;

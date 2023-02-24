@@ -16,7 +16,7 @@ const ProjectBrowser = () => {
     return <div>Loading</div>;
   }
   return (
-    <div className="project-browser-container">
+    <div id="ProjectBrowser">
       <div className="project-browser-instructions">
         <div className="project-browser-instruction">
           This is my interactive project browser. It displays some of the

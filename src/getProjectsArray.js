@@ -100,20 +100,20 @@ const getProjectsArray = () => {
       npmLibraries: ["round-flag-icons", "unix-timestamp"],
     },
 
-    {
-      id: "to-do",
-      name: "To Do List",
-      imageSrc: toDoGif,
-      link: "https://aecel.github.io/to-do/",
-      githubLink: `https://github.com/aecel/to-do`,
-      alt: "Link to To Do List",
-      projectType: "Odin Project",
-      favicon: toDoFavicon,
-      description: [],
-      lessons: [],
-      whatIUsed: ["Javascript", "HTML", "CSS", "Webpack", "npm"],
-      npmLibraries: ["date-fns"],
-    },
+    // {
+    //   id: "to-do",
+    //   name: "To Do List",
+    //   imageSrc: toDoGif,
+    //   link: "https://aecel.github.io/to-do/",
+    //   githubLink: `https://github.com/aecel/to-do`,
+    //   alt: "Link to To Do List",
+    //   projectType: "Odin Project",
+    //   favicon: toDoFavicon,
+    //   description: [],
+    //   lessons: [],
+    //   whatIUsed: ["Javascript", "HTML", "CSS", "Webpack", "npm"],
+    //   npmLibraries: ["date-fns"],
+    // },
   ];
 
   return projectsArray;
