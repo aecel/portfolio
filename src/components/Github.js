@@ -21,13 +21,15 @@ const Github = () => {
             src={GithubLogo}
             alt=""
           />
-          <h2>I'm on github!</h2>
+          <h2>I'm on GitHub!</h2>
         </a>
-        <img
-          className="github-calendar"
-          src="https://ghchart.rshah.org/aecel"
-          alt="aecel's Github chart"
-        />
+        <a target="_blank" rel="noreferrer" href="https://github.com/aecel">
+          <img
+            className="github-calendar"
+            src="https://ghchart.rshah.org/aecel"
+            alt="aecel's Github chart"
+          />
+        </a>
       </div>
     </div>
   )
