@@ -4,6 +4,7 @@ import ReactTooltipLogo from "../images/logos/ReactTooltip.svg"
 import PartyJSLogo from "../images/logos/PartyJS.png"
 import ReactRouterLogo from "../images/logos/ReactRouter.svg"
 import JsPDFLogo from "../images/logos/jsPDF.png"
+import npmLogo from "../images/logos/npm.svg"
 
 const logoObj = {
   "Chart.js": chartJSLogo,
@@ -22,7 +23,11 @@ const Libraries = ({ libraries }) => {
           <div className="project-stack-container">
             {libraries.map((name) => {
               return (
-                <RoundedSquare key={name} icon={logoObj[name]} text={name} />
+                <RoundedSquare
+                  key={name}
+                  icon={logoObj[name] ? logoObj[name] : npmLogo}
+                  text={name}
+                />
               )
             })}
           </div>

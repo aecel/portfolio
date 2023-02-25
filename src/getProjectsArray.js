@@ -1,16 +1,16 @@
-import shoppingCartGif from "./images/projects/shopping-cart.gif";
-import habbitAppGif from "./images/projects/habit-app.gif";
-import cvProjectGif from "./images/projects/cv-project.gif";
-import memoryGameGif from "./images/projects/memory-game.gif";
-import weatherAppGif from "./images/projects/weather-app.gif";
-import toDoGif from "./images/projects/to-do.gif";
+import shoppingCartGif from "./images/projects/shopping-cart.gif"
+import habbitAppGif from "./images/projects/habit-app.gif"
+import cvProjectGif from "./images/projects/cv-project.gif"
+import memoryGameGif from "./images/projects/memory-game.gif"
+import weatherAppGif from "./images/projects/weather-app.gif"
+import toDoGif from "./images/projects/to-do.gif"
 
-import shoppingCartFavicon from "./images/favicons/shopping-cart.ico";
-import habbitAppFavicon from "./images/favicons/habit-app.ico";
-import cvProjectFavicon from "./images/favicons/cv-project.ico";
-import memoryGameFavicon from "./images/favicons/memory-game.ico";
-import weatherAppFavicon from "./images/favicons/weather-app.ico";
-import toDoFavicon from "./images/favicons/to-do.ico";
+import shoppingCartFavicon from "./images/favicons/shopping-cart.ico"
+import habbitAppFavicon from "./images/favicons/habit-app.ico"
+import cvProjectFavicon from "./images/favicons/cv-project.ico"
+import memoryGameFavicon from "./images/favicons/memory-game.ico"
+import weatherAppFavicon from "./images/favicons/weather-app.ico"
+import toDoFavicon from "./images/favicons/to-do.ico"
 
 const getProjectsArray = () => {
   const projectsArray = [
@@ -23,7 +23,9 @@ const getProjectsArray = () => {
       alt: "Link to Habit Forming App",
       projectType: "Personal Project",
       favicon: habbitAppFavicon,
-      description: [],
+      description: [
+        "A non-punishing web app that will help the user form habits",
+      ],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: [
@@ -44,7 +46,7 @@ const getProjectsArray = () => {
       alt: "Link to Shopping Cart",
       projectType: "Odin Project",
       favicon: shoppingCartFavicon,
-      description: [],
+      description: ["A bakery website with a shopping cart"],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["React Router"],
@@ -58,7 +60,7 @@ const getProjectsArray = () => {
       alt: "Link to CV Generator",
       projectType: "Odin Project",
       favicon: cvProjectFavicon,
-      description: [],
+      description: ["A website that makes a downloadable CV in the pdf format"],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["jsPDF"],
@@ -72,7 +74,10 @@ const getProjectsArray = () => {
       alt: "Link to Memory Game",
       projectType: "Odin Project",
       favicon: memoryGameFavicon,
-      description: [],
+      description: [
+        "A simple card-flipping game that tests your memory",
+        "Flip two cards consecutively that have the same animal on them. The goal is to remember the card positions and have all cards face up at the end of the game.",
+      ],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: ["party.js"],
@@ -86,7 +91,9 @@ const getProjectsArray = () => {
       alt: "Link to Weather App",
       projectType: "Odin Project",
       favicon: weatherAppFavicon,
-      description: [],
+      description: [
+        "A weather app that uses OpenWeather API for the weather data and Leaflet API for the mini map",
+      ],
       lessons: [],
       whatIUsed: [
         "Javascript",
@@ -114,9 +121,9 @@ const getProjectsArray = () => {
     //   whatIUsed: ["Javascript", "HTML", "CSS", "Webpack", "npm"],
     //   npmLibraries: ["date-fns"],
     // },
-  ];
+  ]
 
-  return projectsArray;
-};
+  return projectsArray
+}
 
-export default getProjectsArray;
+export default getProjectsArray

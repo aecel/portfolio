@@ -12,14 +12,14 @@ const ProjectDescription = ({ description }) => {
               >
                 {paragraph}
               </div>
-            );
+            )
           })}
         </div>
       ) : (
         <></>
       )}
     </>
-  );
-};
+  )
+}
 
-export default ProjectDescription;
+export default ProjectDescription
