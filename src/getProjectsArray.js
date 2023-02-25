@@ -76,7 +76,8 @@ const getProjectsArray = () => {
       favicon: memoryGameFavicon,
       description: [
         "A simple card-flipping game that tests your memory",
-        "Flip two cards consecutively that have the same animal on them. The goal is to remember the card positions and have all cards face up at the end of the game.",
+        "Flip two cards consecutively that have the same animal on them.",
+        "The goal is to remember the card positions and have all cards face up at the end of the game.",
       ],
       lessons: [],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],

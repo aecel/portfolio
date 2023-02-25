@@ -9,8 +9,10 @@ const ProjectDescription = ({ description }) => {
               <div
                 className="project-info-text project-description-text"
                 key={index}
+                // style={index === 0 ? { fontWeight: "bold" } : {}}
               >
                 {paragraph}
+                {index === 0 ? <div style={{ height: "20px" }}></div> : <></>}
               </div>
             )
           })}
