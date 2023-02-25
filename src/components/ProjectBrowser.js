@@ -25,11 +25,11 @@ const ProjectBrowser = () => {
         <div className="project-browser-instruction">
           Click on a tab to preview a project.
         </div>
-        <div className="project-browser-instruction">
+        {/* <div className="project-browser-instruction">
           Click on the preview image to open a live demo in a new tab.
-        </div>
+        </div> */}
         <div className="project-browser-instruction">
-          Scroll below the browser to see more information about the highlighted
+          Scroll below the project browser to see more information about the highlighted
           project.
         </div>
       </div>

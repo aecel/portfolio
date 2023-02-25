@@ -438,6 +438,10 @@ a {
     display: none;
   }
 
+  .project-navbar-tab {
+    justify-content: center;
+  }
+
   .rounded-square {
     height: 60px;
     width: 90px;
