@@ -3,7 +3,7 @@ const Introduction = () => {
   return (
     <div id="Introduction">
       <div className="main-with-max-width">
-        {/* <img
+        <img
           src={introductionGif}
           alt=""
           style={{
@@ -14,7 +14,7 @@ const Introduction = () => {
             objectPosition: "bottom",
             // objectFit: "contain",
           }}
-        /> */}
+        />
         <h2>Hi, I'm Aecel</h2>
         <div>I'm a front-end web developer</div>
       </div>
