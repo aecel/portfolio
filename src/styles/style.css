@@ -11,7 +11,7 @@
   --screen-margin: 200px;
   scrollbar-width: thin;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -231,14 +231,28 @@ footer {
 .project-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
   width: 100%;
+  /* max-width: 800px; */
   padding: 20px;
   background-color: #1c1b22;
   border-radius: 10px;
   border: none;
   box-shadow: var(--shadow);
   margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.project-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
   box-sizing: border-box;
 }
 
@@ -276,6 +290,7 @@ a {
 
 .project-info-text {
   color: rgb(216, 216, 216);
+  line-height: 2;
 }
 
 .project-description-text {

@@ -9,10 +9,18 @@ const ProjectDescription = ({ description }) => {
               <div
                 className="project-info-text project-description-text"
                 key={index}
-                // style={index === 0 ? { fontWeight: "bold" } : {}}
+                style={index === 0 ? { color: "lightgreen" } : {}}
               >
                 {paragraph}
-                {index === 0 ? <div style={{ height: "20px" }}></div> : <></>}
+                {/* {index === 0 ? (
+                  <div
+                    style={{
+                      height: "20px",
+                    }}
+                  ></div>
+                ) : (
+                  <></>
+                )} */}
               </div>
             )
           })}

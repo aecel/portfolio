@@ -25,8 +25,12 @@ const getProjectsArray = () => {
       favicon: habbitAppFavicon,
       description: [
         "A non-punishing web app that will help the user form habits",
+        "It typically takes 66 days to form a habit, but the time may vary based on the person and the habit (between 18 and 254 days).",
+        "I wanted to make a habit app that is based on this principle, and also take into account that breaking a streak is discouraging to some people (like me).",
       ],
-      lessons: [],
+      lessons: [
+        "I decided to make this web app have a mobile-first design, because I (the main user) definitely want to use it on my phone. It taught me a lot about responsive design decisions. It's way easier to make a mobile-first app to be responsive on the desktop than the other way around.",
+      ],
       whatIUsed: ["React", "Javascript", "HTML", "CSS", "Webpack", "npm"],
       npmLibraries: [
         "React Router",
