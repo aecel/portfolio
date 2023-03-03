@@ -60,17 +60,13 @@ footer {
 /* Introduction Component */
 
 #Introduction {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: var(--screen-margin);
-  margin-right: var(--screen-margin);
+  padding: 150px var(--screen-margin) 150px var(--screen-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   width: 100%;
-  /* height: 500px; */
   background-color: var(--darker-gray);
   box-sizing: border-box;
 }
@@ -78,17 +74,14 @@ footer {
 /* Github component */
 
 #Github {
-  margin-left: var(--screen-margin);
-  margin-right: var(--screen-margin);
+  padding: 150px var(--screen-margin) 150px var(--screen-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   width: 100%;
-  height: 400px;
   background-color: var(--dark-gray);
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -247,7 +240,7 @@ footer {
 .project-info-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 80px;
   width: 100%;
   max-width: 800px;
   padding: 20px;
@@ -271,6 +264,7 @@ footer {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .project-link {
@@ -289,7 +283,7 @@ a {
 }
 
 .project-info-text {
-  color: rgb(216, 216, 216);
+  /* color: rgb(216, 216, 216); */
   line-height: 2;
 }
 
@@ -299,7 +293,7 @@ a {
 
 .project-info-text-heading {
   font-weight: bold;
-  color: rgb(216, 216, 216);
+  /* color: rgb(216, 216, 216); */
   padding-bottom: 10px;
   border-bottom: 2px rgb(98, 98, 98) dashed;
   margin-bottom: 20px;
@@ -369,7 +363,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: var(--dark-gray);
-  padding: 50px var(--screen-margin) 50px var(--screen-margin);
+  padding: 150px var(--screen-margin) 150px var(--screen-margin);
   box-sizing: border-box;
 }
 
@@ -463,9 +457,14 @@ a {
     height: 60px;
     width: 90px;
   }
+
   .rounded-square-icon-container {
     height: 20px;
     width: 20px;
+  }
+
+  .project-links {
+    gap: 10px;
   }
 }
 

@@ -18,7 +18,7 @@ const ProjectInfo = ({
     <div className="project-info">
       <div className="project-info-content">
         <div className="project-info-top">
-          <div style={{ fontWeight: "bold" }}>
+          <div style={{ fontWeight: "bold", fontSize: "1.1rem" }}>
             {name} - {projectType}
           </div>
           <div className="project-links">
