@@ -43,7 +43,7 @@ const ProjectInfo = ({
           </div>
         </div>
         <ProjectDescription description={description} />
-        <WhatILearned lessons={lessons} />
+        {/* <WhatILearned lessons={lessons} /> */}
         <WhatIUsed array={whatIUsed} />
         <Libraries libraries={npmLibraries} />
       </div>
