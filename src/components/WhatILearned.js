@@ -1,7 +1,7 @@
 const WhatILearned = ({ lessons }) => {
   return (
     <>
-      {lessons.length > 0 ? (
+      {lessons.length > 0 && (
         <div>
           <div className="project-info-text-heading">What I learned</div>
           <div style={{ height: "20px" }}></div>
@@ -46,8 +46,6 @@ const WhatILearned = ({ lessons }) => {
             })}
           </div>
         </div>
-      ) : (
-        <></>
       )}
     </>
   )

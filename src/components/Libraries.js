@@ -17,7 +17,7 @@ const logoObj = {
 const Libraries = ({ libraries }) => {
   return (
     <>
-      {libraries ? (
+      {libraries && (
         <div>
           <div className="project-info-text-heading">npm Libraries used</div>
           <div className="project-stack-container">
@@ -32,8 +32,6 @@ const Libraries = ({ libraries }) => {
             })}
           </div>
         </div>
-      ) : (
-        <></>
       )}
     </>
   )

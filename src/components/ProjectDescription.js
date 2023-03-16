@@ -1,7 +1,7 @@
 const ProjectDescription = ({ description }) => {
   return (
     <>
-      {description.length > 0 ? (
+      {description.length > 0 && (
         <div>
           <div className="project-info-text-heading">Description</div>
           {description.map((paragraph, index) => {
@@ -16,8 +16,6 @@ const ProjectDescription = ({ description }) => {
             )
           })}
         </div>
-      ) : (
-        <></>
       )}
     </>
   )
