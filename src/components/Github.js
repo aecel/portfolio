@@ -26,7 +26,7 @@ const Github = () => {
         <a target="_blank" rel="noreferrer" href="https://github.com/aecel">
           <img
             className="github-calendar"
-            src="https://ghchart.rshah.org/aecel"
+            src="https://ghchart.rshah.org/737BCE/aecel"
             alt="aecel's Github chart"
           />
         </a>
