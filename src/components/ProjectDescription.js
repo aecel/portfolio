@@ -9,7 +9,7 @@ const ProjectDescription = ({ description }) => {
               <div
                 className="project-info-text project-description-text"
                 key={index}
-                style={index === 0 ? { color: "lightgreen" } : {}}
+                style={index === 0 ? { color: "var(--color-theme-light)" } : {}}
               >
                 {paragraph}
               </div>

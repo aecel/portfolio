@@ -26,7 +26,7 @@ const WhatILearned = ({ lessons }) => {
                       borderRadius: "50%",
                       height: "30px",
                       width: "30px",
-                      backgroundColor: "green",
+                      backgroundColor: "var(--color-theme)",
                       color: "white",
                     }}
                   >

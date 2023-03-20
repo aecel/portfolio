@@ -6,7 +6,8 @@
   --shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
   --dark-gray: #1e1e1e;
   --darker-gray: #141414;
-  --theme-color: rgb(34, 34, 34);
+  --color-theme: rgb(115, 123, 206);
+  --color-theme-light: rgb(160, 166, 235);
   --max-width: 1400px;
   --screen-margin: 200px;
   scrollbar-width: thin;
@@ -271,7 +272,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: var(--color-theme);
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -373,17 +374,17 @@ a {
   font-weight: bold;
   cursor: pointer;
   padding: 10px 20px 10px 20px;
-  background-color: green;
+  background-color: var(--color-theme);
   border: none;
   border-radius: 10px;
 }
 
 #HireMeButton:hover {
-  background-color: lightgreen;
+  background-color: var(--color-theme-light);
 }
 
 #HireMeButton:active {
-  background-color: green;
+  background-color: var(--color-theme);
 }
 
 /* Media Queries */

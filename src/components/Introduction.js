@@ -1,4 +1,4 @@
-import introductionGif from "../images/Introduction.gif"
+import introductionGif from "../images/NewProfilePic.gif"
 const Introduction = () => {
   return (
     <div id="Introduction">
@@ -10,8 +10,8 @@ const Introduction = () => {
             width: "300px",
             height: "300px",
             // border: "white 2px dashed",
-            borderRadius: "50%",
-            objectPosition: "bottom",
+            // borderRadius: "50%",
+            // objectPosition: "bottom",
             // objectFit: "contain",
           }}
         />
