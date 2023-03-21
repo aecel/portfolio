@@ -359,10 +359,12 @@ a {
 /* ContactMe component */
 
 #ContactMe {
+  height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--dark-gray);
   padding: 150px var(--screen-margin) 150px var(--screen-margin);
   box-sizing: border-box;

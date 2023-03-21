@@ -21,7 +21,7 @@ const Github = () => {
             src={GithubLogo}
             alt=""
           />
-          <h2>I'm on GitHub!</h2>
+          <h2>I'm on GitHub! (@aecel)</h2>
         </a>
         <a target="_blank" rel="noreferrer" href="https://github.com/aecel">
           <img
