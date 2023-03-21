@@ -8,6 +8,7 @@
   --darker-gray: #141414;
   --color-theme: rgb(115, 123, 206);
   --color-theme-light: rgb(160, 166, 235);
+  --color-theme-dark: rgb(84, 92, 172);
   --max-width: 1400px;
   --screen-margin: 200px;
   scrollbar-width: thin;
@@ -38,14 +39,96 @@ main {
 
 header,
 footer {
-  height: 30px;
   width: 100%;
-  padding: 20px var(--screen-margin) 20px var(--screen-margin);
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
   box-sizing: border-box;
-  background-color: var(--darker-gray);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.74);
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  background-color: #141414;
+}
+
+.emphasize-text {
+  color: var(--color-theme);
+  /* font-weight: bold; */
+  font-style: normal;
+}
+
+/* Header elements */
+
+.header-elements {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#hamburger-menu {
+  display: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.hamburger-line {
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
+  width: 30px;
+}
+
+#hamburger-items {
+  display: none;
+  position: absolute;
+  top: 75px;
+  /* background-color: blue;   */
+  flex-direction: column;
+}
+
+.hamburger-item {
+  padding: 10px 5px 10px 5px;
+  background-color: black;
+  border-radius: 0;
+}
+
+.hamburger-item:hover {
+  background-color: gray;
 }
 
 .main-with-max-width {
@@ -56,6 +139,26 @@ footer {
   max-width: var(--max-width);
   gap: 30px;
   text-align: center;
+}
+
+button {
+  font-size: 1rem;
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: var(--color-theme-dark);
+  padding: 15px 25px 15px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 120px;
+}
+
+button:hover {
+  background-color: var(--color-theme);
+}
+
+button:active {
+  background-color: var(--color-theme-dark);
 }
 
 /* Introduction Component */
@@ -405,6 +508,18 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .header-button {
+    font-size: 0.9rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 @media (max-width: 700px) {
   :root {
     --screen-margin: 30px;
@@ -439,6 +554,20 @@ a {
 
   .github-calendar {
     width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-elements {
+    display: none;
+  }
+
+  header {
+    justify-content: right;
+  }
+
+  #hamburger-menu {
+    display: flex;
   }
 }
 

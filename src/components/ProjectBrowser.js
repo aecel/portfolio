@@ -1,22 +1,40 @@
-import { useState } from "react";
-import getProjectsArray from "../getProjectsArray";
-import ProjectInfo from "./ProjectInfo";
-import FireChromeSvg from "../images/logos/FireChromeBlue.svg";
+import { useEffect, useRef, useState } from "react"
+import getProjectsArray from "../getProjectsArray"
+import ProjectInfo from "./ProjectInfo"
+import FireChromeSvg from "../images/logos/FireChromeBlue.svg"
 
-const ProjectBrowser = () => {
-  const projectArray = getProjectsArray();
-  const [chosenProject, setChosenProject] = useState(projectArray[0]);
+const ProjectBrowser = ({ triggerRef, triggerRef2 }) => {
+  const sectionRef = useRef()
+
+  const scroll = () => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+  useEffect(() => {
+    const trigger = triggerRef.current
+    trigger.addEventListener("click", scroll)
+    const trigger2 = triggerRef2.current
+    trigger2.addEventListener("click", scroll)
+
+    return () => {
+      trigger.removeEventListener("click", scroll)
+      trigger2.removeEventListener("click", scroll)
+    }
+  }, [triggerRef, triggerRef2])
+
+  const projectArray = getProjectsArray()
+  const [chosenProject, setChosenProject] = useState(projectArray[0])
 
   const chooseTab = (index) => {
-    setChosenProject(projectArray[index]);
-  };
+    setChosenProject(projectArray[index])
+  }
 
   if (!chosenProject) {
-    console.log("Loading");
-    return <div>Loading</div>;
+    console.log("Loading")
+    return <div>Loading</div>
   }
   return (
-    <div id="ProjectBrowser">
+    <div id="ProjectBrowser" ref={sectionRef}>
       <div className="project-browser-instructions">
         <div className="project-browser-instruction">
           This is my interactive project browser. It displays some of the
@@ -29,8 +47,8 @@ const ProjectBrowser = () => {
           Click on the preview image to open a live demo in a new tab.
         </div> */}
         <div className="project-browser-instruction">
-          Scroll below the project browser to see more information about the highlighted
-          project.
+          Scroll below the project browser to see more information about the
+          highlighted project.
         </div>
       </div>
       <div className="project-browser-header">
@@ -69,7 +87,7 @@ const ProjectBrowser = () => {
               <img src={project.favicon} className="project-favicon" alt="" />
               {project.name}
             </div>
-          );
+          )
         })}
       </div>
       <div className="project-browser-top"></div>
@@ -96,7 +114,7 @@ const ProjectBrowser = () => {
         npmLibraries={chosenProject.npmLibraries}
       />
     </div>
-  );
-};
+  )
+}
 
-export default ProjectBrowser;
+export default ProjectBrowser

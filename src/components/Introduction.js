@@ -1,7 +1,25 @@
+import { useEffect, useRef } from "react"
 import introductionGif from "../images/NewProfilePic.gif"
-const Introduction = () => {
+const Introduction = ({ triggerRef, triggerRef2 }) => {
+  const sectionRef = useRef()
+
+  const scroll = () => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+  useEffect(() => {
+    const trigger = triggerRef.current
+    trigger.addEventListener("click", scroll)
+    const trigger2 = triggerRef2.current
+    trigger2.addEventListener("click", scroll)
+
+    return () => {
+      trigger.removeEventListener("click", scroll)
+      trigger2.removeEventListener("click", scroll)
+    }
+  }, [triggerRef, triggerRef2])
   return (
-    <div id="Introduction">
+    <div id="Introduction" ref={sectionRef}>
       <div className="main-with-max-width">
         <img
           src={introductionGif}
