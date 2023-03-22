@@ -1,7 +1,6 @@
 import "./styles/style.css"
-import Footer from "./components/Footer"
+import "./styles/animations.css"
 import Main from "./components/Main"
-import Header from "./components/Header"
 
 const App = () => {
   return (
